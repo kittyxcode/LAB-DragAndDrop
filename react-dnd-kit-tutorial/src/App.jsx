@@ -16,7 +16,7 @@ function App(){
     <DndContext
       collisionDetection={closestCenter}
       onDragEnd={handleDragEnd}>     
-      <h1>Hola</h1>
+      <h1>Users List</h1>
     </DndContext>
   )
 }
