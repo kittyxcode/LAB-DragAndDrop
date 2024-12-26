@@ -11,7 +11,8 @@ function App(){
     {name: 'Sue', id: 3},])
 
   return(
-    <div>hello world</div>
+    <DndContext>
+    </DndContext>
   )
 }
 export default App;
