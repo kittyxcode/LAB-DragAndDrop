@@ -20,6 +20,12 @@ function App(){
     >     
       <h1 className='text-2xl font-bold'>Users List</h1>
 
+      <SortableContext 
+      items={people}
+      strategy={verticalListSortingStrategy}>
+        {/*componets*/}
+      </SortableContext>
+
 
     </DndContext>
   )
