@@ -15,3 +15,5 @@ npm install @dnd-kit/core
 Esto tambien ya que dnd es un libreria modular y aca esta lo que necesitamos para este lab
 
 npm install @dnd-kit/utilities @dnd-kit/sortable
+
+## 6 Instalar Tailwild
