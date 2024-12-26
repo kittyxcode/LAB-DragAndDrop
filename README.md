@@ -9,3 +9,9 @@ Es un laboratorio para aprender a ocupar una libreria de drag and drop.
 ## 5-Instalar dnd Kit
 
 dnd kit es una libreria que permite hacer drop, drag, sort y demas acciones para arrastra, mover, o ordenar tarjetas, este es un laboratorio basico asi que solo usaremos lo basico.
+
+npm install @dnd-kit/core
+
+Esto tambien ya que dnd es un libreria modular y aca esta lo que necesitamos para este lab
+
+npm install @dnd-kit/utilities @dnd-kit/sortable
