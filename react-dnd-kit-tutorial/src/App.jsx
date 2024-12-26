@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import {DndContext, closestCenter} from '@dnd-kit/core';
-import {SortableContext} from '@dnd-kit/sortable';
+import {SortableContext, verticalListSortingStrategy} from '@dnd-kit/sortable';
 
 
 
@@ -19,6 +19,8 @@ function App(){
       onDragEnd={handleDragEnd}
     >     
       <h1 className='text-2xl font-bold'>Users List</h1>
+
+
     </DndContext>
   )
 }
