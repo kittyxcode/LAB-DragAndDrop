@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import {DndContext, closestCenter} from '@dnd-kit/core';
 import {SortableContext, verticalListSortingStrategy} from '@dnd-kit/sortable';
-
+import {User} from './User';
 
 
 function App(){
