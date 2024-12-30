@@ -16,7 +16,6 @@ function App() {
   const handleDragEnd = (event) => {
     const {active, over} = event;
 
-
     setPeople((people) => {
 
     const oldIndex = people.findIndex(person=>person.id===active.id);
