@@ -14,15 +14,15 @@ function App() {
   ]);
 
   const handleDragEnd = (event) => {
-    console.log(people);
     const {active, over} = event;
+
+
+    setPeople((people) => {
 
     const oldIndex = people.findIndex(person=>person.id===active.id);
     const newIndex = people.findIndex(person=>person.id===over.id);
-
-    const newOrder = arrayMove(people, oldIndex, newIndex);
-    setPeople(newOrder);
-
+    return arrayMove(people, oldIndex, newIndex);
+   });
   };
 
   return (
