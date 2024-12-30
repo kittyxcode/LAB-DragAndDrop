@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import { DndContext, closestCenter } from '@dnd-kit/core';
-import { SortableContext, verticalListSortingStrategy } from '@dnd-kit/sortable';
+import { SortableContext, 
+         verticalListSortingStrategy, 
+         arrayMove
+}from '@dnd-kit/sortable';
 import User from './User';
 
 function App() {
@@ -11,10 +14,15 @@ function App() {
   ]);
 
   const handleDragEnd = (event) => {
+    console.log(people);
     const {active, over} = event;
 
     const oldIndex = people.findIndex(person=>person.id===active.id);
     const newIndex = people.findIndex(person=>person.id===over.id);
+
+    const newOrder = arrayMove(people, oldIndex, newIndex);
+    setPeople(newOrder);
+
   };
 
   return (
