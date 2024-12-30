@@ -11,7 +11,7 @@ function App() {
   ]);
 
   const handleDragEnd = (event) => {
-    // Handle drag end logic here
+    console.log('arrastrando')
   };
 
   return (
@@ -19,7 +19,7 @@ function App() {
       <h1 className='text-2xl font-bold'>Users List</h1>
       <SortableContext items={people} strategy={verticalListSortingStrategy}>
         {people.map((user) => (
-          <User user={user} />
+          <User user={user} key={user.id}/>
         ))}
       </SortableContext>
     </DndContext>
