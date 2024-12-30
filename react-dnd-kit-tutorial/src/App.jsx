@@ -26,14 +26,18 @@ function App() {
   };
 
   return (
-    <DndContext collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
-      <h1 className='text-2xl font-bold'>Users List</h1>
-      <SortableContext items={people} strategy={verticalListSortingStrategy}>
-        {people.map((user) => (
-          <User user={user} key={user.id}/>
-        ))}
-      </SortableContext>
-    </DndContext>
+    <div className='flex justify-center items-center'>
+      <div className='w-4/6'>
+        <DndContext collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
+          <h1 className='text-2xl font-bold'>Users List</h1>
+          <SortableContext items={people} strategy={verticalListSortingStrategy}>
+            {people.map((user) => (
+            <User user={user} key={user.id}/>
+            ))}
+          </SortableContext>
+        </DndContext>
+      </div>
+    </div>
   );
 }
 
