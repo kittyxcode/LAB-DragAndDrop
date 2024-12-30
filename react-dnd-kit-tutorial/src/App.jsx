@@ -5,14 +5,16 @@ import User from './User';
 
 function App() {
   const [people, setPeople] = useState([
-    { name: 'John', id: 1 },
-    { name: 'Peter', id: 2 },
-    { name: 'Sue', id: 3 },
+    { name: 'John', id: 'a' },
+    { name: 'Peter', id: 'b' },
+    { name: 'Sue', id: 'c' },
   ]);
 
   const handleDragEnd = (event) => {
     const {active, over} = event;
-    console.log(active.id, over.id);
+
+    const oldIndex = people.findIndex(person=>person.id===active.id);
+    const newIndex = people.findIndex(person=>person.id===over.id);
   };
 
   return (
