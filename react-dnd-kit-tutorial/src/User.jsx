@@ -3,7 +3,7 @@ import { useSortable } from "@dnd-kit/sortable";
 
 function User({user}){
 
-    //continuuin
+    //continuuine
     const {
         atributes, 
         listeners,
