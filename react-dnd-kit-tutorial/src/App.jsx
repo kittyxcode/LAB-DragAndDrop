@@ -11,7 +11,8 @@ function App() {
   ]);
 
   const handleDragEnd = (event) => {
-    console.log('arrastrando')
+    const {active, over} = event;
+    console.log(active.id, over.id);
   };
 
   return (
